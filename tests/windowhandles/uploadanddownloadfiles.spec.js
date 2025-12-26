@@ -34,7 +34,7 @@ test("upload file", async({page})=>{
 
 })
 
-test.only("download file",async({page})=>{
+test("download file",async({page})=>{
     await page.goto('https://demoapps.qspiders.com/ui/download?sublist=0')
     await page.locator("#writeArea").fill("Downloading file")
     await page.locator("#fileName").fill("newfile.txt")
