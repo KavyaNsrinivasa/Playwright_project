@@ -28,7 +28,7 @@ test("handling multi tabs", async({page})=>{
      await page2.click('//li[@id="account_dd"]')
 })
 
-test.only("multi window", async({page})=>{
+test("multi window", async({page})=>{
     await page.goto('https://demoapps.qspiders.com/ui/browser/multipleWindow?sublist=2')
     let [window] = await Promise.all([
         page.waitForEvent('popup'),
