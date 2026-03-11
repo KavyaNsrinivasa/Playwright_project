@@ -1,4 +1,4 @@
-import {test} from "@playwright/test"
+import {test} from "@playwright/test";
 
 test("auto suggestion box", async ({page}) => {
     await page.goto('https://www.amazon.in/')

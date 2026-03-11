@@ -1,4 +1,4 @@
-import {test,expect} from "@playwright/test"
+import {test,expect} from "@playwright/test";
 
 test("auto retry assertion",async ({page})=>{
     await page.goto("https://demoapps.qspiders.com/ui?scenario=1")
